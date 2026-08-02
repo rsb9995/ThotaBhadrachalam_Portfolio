@@ -1,5 +1,6 @@
 /* ==========================================================================
    Thota Bhadrachalam - Portfolio JavaScript Application
+   Enhanced Mobile Responsiveness & Touch Navigation Handlers
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -75,28 +76,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- 3. Mobile Navigation Menu Toggle --- */
+  /* --- 3. Mobile Navigation Menu & Touch Handlers --- */
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-links');
 
+  function closeMobileMenu() {
+    if (navMenu && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open');
+      document.body.style.overflow = '';
+      if (mobileToggle) {
+        const icon = mobileToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      }
+    }
+  }
+
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       navMenu.classList.toggle('open');
+      const isOpen = navMenu.classList.contains('open');
       const icon = mobileToggle.querySelector('i');
-      if (navMenu.classList.contains('open')) {
+      
+      if (isOpen) {
         icon.className = 'fa-solid fa-xmark';
+        document.body.style.overflow = 'hidden'; // Lock background scrolling
       } else {
         icon.className = 'fa-solid fa-bars';
+        document.body.style.overflow = '';
       }
     });
 
-    // Close menu when link clicked
+    // Close menu when clicking any nav link
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        const icon = mobileToggle.querySelector('i');
-        if (icon) icon.className = 'fa-solid fa-bars';
+        closeMobileMenu();
       });
+    });
+
+    // Close menu when clicking outside of nav menu
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+        closeMobileMenu();
+      }
     });
   }
 
@@ -121,6 +143,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  function openModal() {
+    if (modalBackdrop) {
+      modalBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (modalBackdrop) {
+      modalBackdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
   openModalBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const projKey = btn.getAttribute('data-project');
@@ -129,19 +165,17 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTitle.textContent = data.title;
         modalBody.textContent = data.description;
         modalTags.innerHTML = data.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-        modalBackdrop.classList.add('active');
+        openModal();
       }
     });
   });
 
   if (modalClose && modalBackdrop) {
-    modalClose.addEventListener('click', () => {
-      modalBackdrop.classList.remove('active');
-    });
+    modalClose.addEventListener('click', closeModal);
 
     modalBackdrop.addEventListener('click', (e) => {
       if (e.target === modalBackdrop) {
-        modalBackdrop.classList.remove('active');
+        closeModal();
       }
     });
   }
@@ -163,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
       modalTags.innerHTML = `<span class="tag">Diploma AIML</span><span class="tag">Entry-Level Developer</span>`;
-      modalBackdrop.classList.add('active');
+      openModal();
     });
   }
 
