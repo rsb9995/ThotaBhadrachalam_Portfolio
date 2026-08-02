@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thota Bhadrachalam | Software Developer & AIML Engineer</title>
+  <meta name="description" content="Portfolio website of Thota Bhadrachalam - Entry-level Software Developer and AIML student passionate about Full-Stack Web Development, Python, and AI.">
+  <meta name="keywords" content="Thota Bhadrachalam, Portfolio, Software Developer, AIML, Web Developer, Python, JavaScript, Kakinada">
+  
+  <!-- RSB Favicon & Website Icon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">RSB</div>
+        <span>Thota.Bhadrachalam <span class="gradient-text">Portfolio</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for Opportunities</span>
+        </div>
+        <h1>Hi, I'm <span class="gradient-text">Thota Bhadrachalam</span></h1>
+        <div class="hero-subtitle">
+          <span class="typed-text" id="typed-text"></span>
+        </div>
+        <p class="hero-description">
+          An ambitious Software Developer & AIML student eager to solve real-world problems with modern web technologies, Python, and AI-assisted engineering.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="btn btn-outline" id="view-resume-btn">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>View Resume</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-card">
+          <div class="avatar-glow-ring">
+            <img src="profile.jpg" alt="Thota Bhadrachalam" class="avatar-profile-img">
+          </div>
+          <h3>Thota Bhadrachalam</h3>
+          <p>AIML & Web Developer</p>
+          <div style="margin-top: 1rem; color: var(--text-dim); font-size: 0.85rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Kakinada, AP, India
+          </div>
+        </div>
+
+        <div class="floating-pill pill-1">
+          <i class="fa-solid fa-brain" style="color: #7f00ff;"></i>
+          <span>AIML Student</span>
+        </div>
+        <div class="floating-pill pill-2">
+          <i class="fa-solid fa-code" style="color: #00f2fe;"></i>
+          <span>Vibe Coding & Web</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Career Objective Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Driven by curiosity and a commitment to technological growth</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card objective-card">
+          <h3>
+            <i class="fa-solid fa-bullseye"></i>
+            <span>Career Objective</span>
+          </h3>
+          <p>
+            Seeking an entry-level <strong>Software Developer position</strong> where I can apply my technical skills and passion for technology. I am eager to learn new technologies, solve complex real-world problems, and contribute meaningfully to an organization's success while continuously growing as a skilled professional.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <h3>
+            <i class="fa-solid fa-user-check"></i>
+            <span>Quick Highlights</span>
+          </h3>
+          <div class="quick-stats" style="margin-top: 1.25rem;">
+            <div class="stat-box">
+              <div class="stat-number">AIML</div>
+              <div class="stat-label">Specialization</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Web & AI Projects</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedication to Learning</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Languages (Tel / Eng)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+        <p>Academic Journey & Qualifications</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <h3>Diploma in Artificial Intelligence & Machine Learning (AIML)</h3>
+            <div class="timeline-institution">Pydah College of Engineering</div>
+            <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Diploma Program</div>
+            <p>Focusing on AI algorithms, data analytics, Python programming, neural networks, and modern web application development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <h3>Secondary School Certificate (SSC)</h3>
+            <div class="timeline-institution">Tagore High School</div>
+            <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Completed 2024</div>
+            <p>Score: <strong>456 / 600</strong> — Strong foundation in Science, Mathematics, and Analytical thinking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+        <p>Technologies & Tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-level="85">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <h4>HTML5 & CSS3</h4>
+              <span>Web Structuring & Styling</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="75">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <span>Dynamic Scripting & Logic</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="80">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <span>Data Structures & AIML</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="70">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-info">
+              <h4>SQL</h4>
+              <span>Relational Databases & Queries</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="90">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="skill-info">
+              <h4>Vibe Coding & AI Tools</h4>
+              <span>AI-Assisted Development</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="70">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="skill-info">
+              <h4>Full Stack Web Dev (Basic)</h4>
+              <span>Frontend & Backend Integration</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-level="85">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fa-solid fa-file-excel"></i></div>
+            <div class="skill-info">
+              <h4>Microsoft Office</h4>
+              <span>Word, Excel, PowerPoint</span>
+            </div>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Recent projects I have developed and deployed</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-card project-card">
+          <div class="project-preview-box">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>College Portal with Firebase</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+            A responsive college website integrated with Firebase Database for real-time data storage, student announcements, and dynamic content management.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Realtime DB</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn btn-outline btn-sm open-modal-btn" data-project="college">
+              <i class="fa-solid fa-circle-info"></i> Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card">
+          <div class="project-preview-box">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>AI Web Assistant & Data Utilities</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+            An interactive web application showcasing Python AIML algorithms, smart data processing concepts, and automated workflow triggers.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">AIML</span>
+            <span class="tag">Web API</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn btn-outline btn-sm open-modal-btn" data-project="ai-assistant">
+              <i class="fa-solid fa-circle-info"></i> Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths & Languages Section -->
+  <section class="section" id="strengths">
+    <div class="container">
+      <div class="details-grid">
+        <div class="glass-card">
+          <div class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+            <h2 style="font-size: 1.8rem;">Core Strengths</h2>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Key interpersonal and professional attributes that drive my daily work and team collaboration:
+          </p>
+          <div class="strength-pills">
+            <div class="strength-badge">
+              <i class="fa-solid fa-bolt" style="color: var(--accent-cyan);"></i>
+              <span>Quick Learner</span>
+            </div>
+            <div class="strength-badge">
+              <i class="fa-solid fa-people-group" style="color: #7f00ff;"></i>
+              <span>Teamwork & Collaboration</span>
+            </div>
+            <div class="strength-badge">
+              <i class="fa-solid fa-comments" style="color: #4facfe;"></i>
+              <span>Effective Communication</span>
+            </div>
+            <div class="strength-badge">
+              <i class="fa-solid fa-clock" style="color: #ff0844;"></i>
+              <span>Time Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+            <h2 style="font-size: 1.8rem;">Languages</h2>
+          </div>
+          <div class="language-item">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fa-solid fa-language" style="color: var(--accent-cyan); font-size: 1.2rem;"></i>
+              <strong>Telugu</strong>
+            </div>
+            <span class="tag">Native</span>
+          </div>
+          <div class="language-item">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fa-solid fa-globe" style="color: var(--accent-blue); font-size: 1.2rem;"></i>
+              <strong>English</strong>
+            </div>
+            <span class="tag">Professional Working</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Let's discuss opportunities, projects, or collaborations</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-details">
+              <h5>Email Address</h5>
+              <a href="mailto:thotabhadrachalam24@gmail.com">thotabhadrachalam24@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-details">
+              <h5>Mobile Number</h5>
+              <a href="tel:+919010105077">+91 9010105077</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="contact-details">
+              <h5>LinkedIn Profile</h5>
+              <a href="https://linkedin.com/in/bhadra9995" target="_blank" rel="noopener">linkedin.com/in/bhadra9995</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <h5>Location</h5>
+              <p>Kajuluru, Kakinada District, Andhra Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-input" placeholder="Hi Bhadrachalam, I'd like to talk about..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="logo">
+        <div class="logo-icon">RSB</div>
+        <span>Thota.Bhadrachalam <span class="gradient-text">Portfolio</span></span>
+      </div>
+      <p>© 2026 Thota Bhadrachalam. All rights reserved.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-box">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <h3 id="modal-title" style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1rem;">Project Details</h3>
+      <p id="modal-body" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;"></p>
+      <div id="modal-tags" class="project-tags"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Message sent successfully!</div>
+
+  <!-- JavaScript Application File -->
+  <script src="script.js"></script>
+</body>
+</html>
