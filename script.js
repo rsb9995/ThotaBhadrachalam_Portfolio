@@ -136,10 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'A comprehensive educational website built for college information delivery. Integrated with Google Firebase Realtime Database to store and serve student notices, department updates, and contact submissions dynamically.',
       tags: ['HTML', 'CSS', 'JavaScript', 'Firebase DB', 'Cloud Firestore']
     },
-    'ai-assistant': {
-      title: 'AI Web Assistant & Data Processing Utilities',
-      description: 'An interactive frontend dashboard connecting lightweight Python execution concepts with JavaScript UI triggers. Designed to showcase machine learning concepts, automated data parsing, and user-friendly web widgets.',
-      tags: ['Python', 'JavaScript', 'AIML Algorithms', 'REST API']
+    'rsb-cyber-shield': {
+      title: 'RSB Cyber Shield – AI-Based Cybersecurity & Threat Detection',
+      description: 'An advanced AI-powered cybersecurity web application currently under active development. RSB Cyber Shield leverages machine learning algorithms and real-time network analysis to identify security vulnerabilities, detect digital threats, and protect online assets.',
+      tags: ['AI / AIML', 'Cyber Security', 'Threat Detection', 'Python', 'In Progress']
     }
   };
 
