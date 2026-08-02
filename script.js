@@ -189,6 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="text-align: left;">
           <h4 style="color: var(--text-main); margin-bottom: 0.5rem;">Thota Bhadrachalam</h4>
           <p style="font-size: 0.9rem; margin-bottom: 1rem;">Location: Kajuluru, Kakinada | Email: thotabhadrachalam24@gmail.com | Phone: +91 9010105077</p>
+          <p style="font-size: 0.88rem; margin-bottom: 1rem; color: var(--accent-cyan);">
+            <i class="fa-brands fa-github"></i> <a href="https://github.com/rsb9995" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">github.com/rsb9995</a> &nbsp;|&nbsp; 
+            <i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/bhadra9995" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">linkedin.com/in/bhadra9995</a>
+          </p>
           <hr style="border-color: var(--border-color); margin-bottom: 1rem;">
           <p><strong>Education:</strong> Diploma in AIML (Pydah College of Eng.) | SSC (Tagore High School - 456/600)</p>
           <p><strong>Skills:</strong> HTML, CSS, JavaScript, Python, SQL, Vibe Coding, Full Stack Web Dev (Basic)</p>
