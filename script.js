@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'college': {
       title: 'Basic College Website with Firebase Database',
       description: 'A comprehensive educational website built for college information delivery. Integrated with Google Firebase Realtime Database to store and serve student notices, department updates, and contact submissions dynamically.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'Firebase DB', 'Cloud Firestore']
+      tags: ['HTML', 'CSS', 'JavaScript', 'Firebase DB', 'Cloud Firestore']
     },
     'ai-assistant': {
       title: 'AI Web Assistant & Data Processing Utilities',
@@ -186,5 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       contactForm.reset();
     });
+  }
+
+  /* --- 7. Dynamic Copyright Year --- */
+  const copyrightYear = document.getElementById('copyright-year');
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
   }
 });
